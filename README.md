@@ -10,6 +10,8 @@ the following paper in any resulting publication:
 A Dual-Source Approach for 3D Pose Estimation from a Single Image  
 IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2016.  
 
+For more information visit http://pages.iai.uni-bonn.de/iqbal_umar/ds3dpose/
+
 The code is tested on Ubuntu 14.04 (64bit) with MATLAB (2016a).
 
 #Instructions
