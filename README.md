@@ -1,4 +1,4 @@
-# 3D_Pose_Estimation_CVPR2016
+# A Dual-Source Approach for 3D Pose Estimation from a Single Image  
 
 # Introduction
 
