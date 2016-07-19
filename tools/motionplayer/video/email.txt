@@ -1,0 +1,11 @@
+Hallo,
+
+Die Scripte hängen teilweise von Tidos tools_intern/video_tools ab.
+Das wichtigste für euch ist mit Sicherheit
+motionplayerVideo.m (erstellt ein Video von einem mot-file)
+plotMultiLayerResult2Fig_forVideo.m (zeichnet eure Klassifikationsergebnisse in ein fig mit highlights)
+introVideo.m (zeigt, wie beide benutzt werden).
+
+Grüße,
+
+Andi 

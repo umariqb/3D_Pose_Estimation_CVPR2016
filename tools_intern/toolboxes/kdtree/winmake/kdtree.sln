@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C++ Express 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "kdtree", "kdtree\kdtree.vcproj", "{43937FB1-B712-4718-92A7-F23BD9945647}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43937FB1-B712-4718-92A7-F23BD9945647}.Debug|Win32.ActiveCfg = Debug|Win32
+		{43937FB1-B712-4718-92A7-F23BD9945647}.Debug|Win32.Build.0 = Debug|Win32
+		{43937FB1-B712-4718-92A7-F23BD9945647}.Release|Win32.ActiveCfg = Release|Win32
+		{43937FB1-B712-4718-92A7-F23BD9945647}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

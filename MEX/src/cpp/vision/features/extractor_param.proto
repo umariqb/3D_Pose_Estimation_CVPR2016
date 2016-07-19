@@ -1,0 +1,34 @@
+package vision.features;
+
+
+
+
+message LowLevelFeatureParam {
+  optional int32 size = 1;
+  optional string voc_path = 2;    
+}
+
+
+message SpmBowExtractorParam {
+
+  required int32 pyramid_levels = 1;
+  optional int32 grid_width = 2;
+
+  optional int32 feature_types = 3;
+  
+  optional LowLevelFeatureParam surf_param = 4;
+  optional LowLevelFeatureParam hog_param = 5;
+  optional LowLevelFeatureParam color_param = 6;
+  optional LowLevelFeatureParam ssd_param = 7;
+  optional LowLevelFeatureParam holbp_param = 8;
+  optional LowLevelFeatureParam dense_surf_param = 9;
+  
+    
+}
+
+
+message ExtractorParam {
+  
+  optional SpmBowExtractorParam spm_extractor_param = 1;
+
+}

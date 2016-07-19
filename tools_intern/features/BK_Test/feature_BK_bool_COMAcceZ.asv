@@ -1,0 +1,23 @@
+function feature = feature_BK_bool_COMAcceZ(mot)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Feature value 0: COM Acceleration X-Direction greater Zero
+% Feature value 1: COM Acceleration X-Direction lower Zero
+%
+% @author: Björn Krüger (kruegerb@cs.uni-bonn.de)
+% 
+% todo: Search for correct column: file_id = strmatch(filename,F.files,'exact');
+%       Write csv-File as binary and check if it exists
+%       Allow different conversions to binary feature
+%
+
+
+motiondata=importdata(mot.csvFile);
+dims=size(motiondata.textdata);
+for i=2:dims(1)-1
+    if(str2num(motiondata.textdata{i,24})<0)
+        feature(i)=1;
+    else
+        feature(i)=0;
+    end
+end
+feature=logical(feature);

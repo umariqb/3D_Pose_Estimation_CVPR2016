@@ -1,0 +1,10 @@
+There are two algorithms made available for performing WPCA.
+Both algorithms have been made based on the PCAW algorithm by Kiers.
+
+Psychometrika 62(2) 251-266
+
+PCAWX is the algorithm where the column offsets of the entire data matrix are estimated.
+PCAWXC is the algorithm where the column offsets of the data block of each individual are estimated.
+
+Both algorithms require the properly centered data, together with the calculated center as an input.
+

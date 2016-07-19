@@ -1,0 +1,31 @@
+ 1 footRightBack_robust_0.5_100
+ 2 footLeftBack_robust_0.5_100
+ 3 footRightLift_robust_0.5_100
+ 4 footLeftLift_robust_0.5_100
+ 5 footRightSideways_robust_0.5_100
+ 6 footLeftSideways_robust_0.5_100
+ 7 kneeRightAngle_robust_0.5_100
+ 8 kneeLeftAngle_robust_0.5_100
+ 9 footCrossover_robust_0.5_100
+10 footRightHighVel_robust_0.5_100
+11 footLeftHighVel_robust_0.5_100
+12 handRightFront_robust_0.5_100
+13 handLeftFront_robust_0.5_100
+14 handRightLift_robust_0.5_100
+15 handLeftLift_robust_0.5_100
+16 handRightSideways_robust_0.5_100
+17 handLeftSideways_robust_0.5_100
+18 elbowRightAngle_robust_0.5_100
+19 elbowLeftAngle_robust_0.5_100
+20 handCrossover_robust_0.5_100
+21 handTouch_robust_0.5_100
+22 handRightHighVel_robust_0.5_100
+23 handLeftHighVel_robust_0.5_100
+24 handRightAnyLegTouch_0.5_100
+25 handLeftAnyLegTouch_0.5_100
+26 torsoBent_0.5_100
+27 velPoint_0.5_100_root_
+28 distPointSegment_0.5_100_neck_headtop_rfingers_1_0  1
+29 distPointSegment_0.5_100_neck_headtop_lfingers_1_0  1
+30 distPointSegment_0.5_100_lhip_rhip_rfingers_1_1  1
+31 distPointSegment_0.5_100_lhip_rhip_lfingers_1_1  1

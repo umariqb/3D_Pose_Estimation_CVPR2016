@@ -1,0 +1,1 @@
+drawConfusionMatrix(recallMatrix, class_info, queryClasses,  totalNumberOfHits, numRelevantHits)

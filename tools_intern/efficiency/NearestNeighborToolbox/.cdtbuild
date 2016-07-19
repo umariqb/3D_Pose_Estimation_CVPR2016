@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 3.1.0?>
+
+<ManagedProjectBuildInfo>
+<project id="nn_wrapper.cdt.managedbuild.target.gnu.so.1527072937" name="Shared Library (Gnu)" projectType="cdt.managedbuild.target.gnu.so">
+<configuration artifactExtension="mexa64" artifactName="nn_wrapper" cleanCommand="rm -rf" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser" id="cdt.managedbuild.config.gnu.so.debug.1704871075" name="Debug" parent="cdt.managedbuild.config.gnu.so.debug">
+<toolChain id="cdt.managedbuild.toolchain.gnu.so.debug.117690611" name="GCC Tool Chain" superClass="cdt.managedbuild.toolchain.gnu.so.debug">
+<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.so.debug.97696213" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.so.debug">
+<option id="gnu.cpp.compiler.option.include.paths.2135260875" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+<listOptionValue builtIn="false" value="&quot;${workspace_loc:/nn_wrapper/include}&quot;"/>
+<listOptionValue builtIn="false" value="/usr/local/matlabR2008a/extern/include"/>
+<listOptionValue builtIn="false" value="&quot;${workspace_loc:/nn_wrapper/src}&quot;"/>
+</option>
+<option id="gnu.cpp.compiler.option.other.other.1888563302" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0 -fPIC -fpermissive" valueType="string"/>
+</tool>
+<tool id="cdt.managedbuild.tool.gnu.c.compiler.so.debug.1958071476" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.so.debug">
+<option id="gnu.c.compiler.option.misc.other.2048468636" superClass="gnu.c.compiler.option.misc.other" value="-c -fmessage-length=0 " valueType="string"/>
+</tool>
+<tool id="cdt.managedbuild.tool.gnu.c.linker.so.debug.1524260159" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.so.debug"/>
+<tool id="cdt.managedbuild.tool.gnu.cpp.linker.so.debug.1484596959" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.so.debug"/>
+<tool id="cdt.managedbuild.tool.gnu.assembler.so.debug.557065992" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.so.debug"/>
+<macros/>
+</toolChain>
+</configuration>
+<configuration artifactExtension="mexa64" artifactName="nn_wrapper" cleanCommand="rm -rf" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser" id="cdt.managedbuild.config.gnu.so.release.1917416204" name="Release" parent="cdt.managedbuild.config.gnu.so.release">
+<toolChain id="cdt.managedbuild.toolchain.gnu.so.release.1690661275" name="GCC Tool Chain" superClass="cdt.managedbuild.toolchain.gnu.so.release">
+<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.so.release.1716517008" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.so.release">
+<option id="gnu.cpp.compiler.option.include.paths.832722992" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+<listOptionValue builtIn="false" value="&quot;${workspace_loc:/nn_wrapper/src}&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${workspace_loc:/nn_wrapper/include}&quot;"/>
+<listOptionValue builtIn="false" value="/usr/local/matlabR2008a/extern/include"/>
+</option>
+<option id="gnu.cpp.compiler.option.other.other.1869765232" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0 -fPIC -fpermissive" valueType="string"/>
+</tool>
+<tool id="cdt.managedbuild.tool.gnu.c.compiler.so.release.211394498" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.so.release"/>
+<tool id="cdt.managedbuild.tool.gnu.c.linker.so.release.463969090" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.so.release"/>
+<tool id="cdt.managedbuild.tool.gnu.cpp.linker.so.release.1112392490" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.so.release">
+<option id="gnu.cpp.link.option.paths.1115125009" superClass="gnu.cpp.link.option.paths" valueType="stringList">
+<listOptionValue builtIn="false" value="/usr/local/matlabR2008a/extern/lib/glnxa64"/>
+</option>
+<option id="gnu.cpp.link.option.nodeflibs.1847389986" superClass="gnu.cpp.link.option.nodeflibs" value="false" valueType="boolean"/>
+<option id="gnu.cpp.link.option.nostdlibs.755279769" superClass="gnu.cpp.link.option.nostdlibs" value="false" valueType="boolean"/>
+</tool>
+<tool id="cdt.managedbuild.tool.gnu.assembler.so.release.559321080" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.so.release"/>
+<macros/>
+</toolChain>
+</configuration>
+<macros/>
+</project>
+</ManagedProjectBuildInfo>

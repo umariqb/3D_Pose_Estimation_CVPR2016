@@ -1,0 +1,16 @@
+addpath(fullfile(pwd, 'animate'));
+addpath(fullfile(pwd, 'motionplayer'));
+addpath(fullfile(pwd, 'motionplayerPro'));
+addpath(fullfile(pwd, 'motionplayer','video'));
+addpath(fullfile(pwd, 'motionplayer','camera'));
+addpath(fullfile(pwd, 'cutTool'));
+addpath(fullfile(pwd, 'parser'));
+addpath(fullfile(pwd, 'parser','ASFAMCparser'));
+addpath(fullfile(pwd, 'parser','BVHparser'));
+addpath(fullfile(pwd, 'parser','C3Dparser'));
+addpath(fullfile(pwd, 'parser','C3Dparser','LCS','callbackFunctions'));
+addpath(fullfile(pwd, 'parser','C3Dparser','LCS'));
+addpath(fullfile(pwd, 'quaternions'));
+addpath(fullfile(pwd, 'motionTools'));
+addpath(fullfile(pwd, 'plotTools'));
+addpath(fullfile(pwd, 'code'));

@@ -1,0 +1,54 @@
+function skelTree = buildSkelTree( nameMap )
+
+% determine Indexes
+idx_root        = strmatch('root', nameMap(:,1), 'exact');     
+idx_lhip        = strmatch('lhip', nameMap(:,1), 'exact');     
+idx_lknee       = strmatch('lknee', nameMap(:,1), 'exact');    
+idx_lankle      = strmatch('lankle', nameMap(:,1), 'exact');   
+idx_ltoes       = strmatch('ltoes', nameMap(:,1), 'exact');    
+idx_rhip        = strmatch('rhip', nameMap(:,1), 'exact');     
+idx_rknee       = strmatch('rknee', nameMap(:,1), 'exact');    
+idx_rankle      = strmatch('rankle', nameMap(:,1), 'exact');   
+idx_rtoes       = strmatch('rtoes', nameMap(:,1), 'exact');    
+idx_belly       = strmatch('belly', nameMap(:,1), 'exact');    
+idx_chest       = strmatch('chest', nameMap(:,1), 'exact');    
+idx_neck        = strmatch('neck', nameMap(:,1), 'exact');     
+idx_lclavicle   = strmatch('lclavicle', nameMap(:,1), 'exact');
+idx_lshoulder   = strmatch('lshoulder', nameMap(:,1), 'exact');
+idx_lelbow      = strmatch('lelbow', nameMap(:,1), 'exact');   
+idx_lwrist      = strmatch('lwrist', nameMap(:,1), 'exact');   
+idx_lfingers    = strmatch('lfingers', nameMap(:,1), 'exact'); 
+idx_rclavicle   = strmatch('rclavicle', nameMap(:,1), 'exact');
+idx_rshoulder   = strmatch('rshoulder', nameMap(:,1), 'exact');
+idx_relbow      = strmatch('relbow', nameMap(:,1), 'exact');   
+idx_rwrist      = strmatch('rwrist', nameMap(:,1), 'exact');   
+idx_rfingers    = strmatch('rfingers', nameMap(:,1), 'exact'); 
+idx_head        = strmatch('head', nameMap(:,1), 'exact');     
+idx_headtop     = strmatch('headtop', nameMap(:,1), 'exact');  
+
+%   (same index as in nameMap) =  name,        children,
+skelTree(idx_root     , 1:2)  = { 'root',      [idx_lhip idx_rhip idx_belly]};
+skelTree(idx_lhip     , 1:2)  = { 'lhip',      [idx_root idx_lknee]};
+skelTree(idx_lknee    , 1:2)  = { 'lknee',     [idx_lhip idx_lankle]};
+skelTree(idx_lankle   , 1:2)  = { 'lankle',    [idx_lknee idx_ltoes]};
+skelTree(idx_ltoes    , 1:2)  = { 'ltoes',     [idx_lankle]};
+skelTree(idx_rhip     , 1:2)  = { 'rhip',      [idx_root idx_rknee]};
+skelTree(idx_rknee    , 1:2)  = { 'rknee',     [idx_rhip idx_rankle]};
+skelTree(idx_rankle   , 1:2)  = { 'rankle',    [idx_rknee idx_rtoes]};
+skelTree(idx_rtoes    , 1:2)  = { 'rtoes',     [idx_rankle]};
+skelTree(idx_belly    , 1:2)  = { 'belly',     [idx_root idx_chest]};
+skelTree(idx_chest    , 1:2)  = { 'chest',     [idx_belly idx_neck]};
+skelTree(idx_neck     , 1:2)  = { 'neck',      [idx_chest idx_lclavicle idx_rclavicle idx_head]};
+skelTree(idx_lclavicle, 1:2)  = { 'lclavicle', [idx_neck idx_lshoulder]};
+skelTree(idx_lshoulder, 1:2)  = { 'lshoulder', [idx_lclavicle idx_lelbow]};
+skelTree(idx_lelbow   , 1:2)  = { 'lelbow',    [idx_lshoulder idx_lwrist]};
+skelTree(idx_lwrist   , 1:2)  = { 'lwrist',    [idx_lelbow idx_lfingers]};
+skelTree(idx_lfingers , 1:2)  = { 'lfingers',  [idx_lwrist]};
+skelTree(idx_rclavicle, 1:2)  = { 'rclavicle', [idx_neck idx_rshoulder]};
+skelTree(idx_rshoulder, 1:2)  = { 'rshoulder', [idx_rclavicle idx_relbow]};
+skelTree(idx_relbow   , 1:2)  = { 'relbow',    [idx_rshoulder idx_rwrist]};
+skelTree(idx_rwrist   , 1:2)  = { 'rwrist',    [idx_relbow idx_rfingers]};
+skelTree(idx_rfingers , 1:2)  = { 'rfingers',  [idx_rwrist]};
+skelTree(idx_head     , 1:2)  = { 'head',      [idx_neck idx_headtop]};
+skelTree(idx_headtop  , 1:2)  = { 'headtop',   [idx_head]};
+

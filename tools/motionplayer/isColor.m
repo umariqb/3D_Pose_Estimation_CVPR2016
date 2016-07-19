@@ -1,0 +1,13 @@
+%% validator for color
+% returns true if x is a 1x3 matrix of doubles between 0.0 and 1.0
+function val = isColor(x)
+if(...
+        min(min(x)) >= 0.0 && ...
+        max(max(x)) <= 1.0 && ...
+        size(x,1) == 1 && ...
+        size(x,2) == 3)
+    val = 1;
+else
+    val = 0;
+end
+end
