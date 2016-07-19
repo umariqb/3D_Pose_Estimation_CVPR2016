@@ -89,7 +89,7 @@ Open 'Initialize.m' located in the 'code' folder.
 
   You can either call 'RUN_Complete.m' to perform 3D Pose Estimation onthe whole dataset once or call 'RUN_Iterated.m' to performe 3D Pose Estimation	for each single image of the dataset.  
 
-	Ideally the approach requires roughly 100GBs of RAM to load 3D pose databases for the retrievel of K-NNs. However, in this release we have modified the code to fit in 32GBs of RAM. Therefore, the run-time will be different as compared to  the one report in the paper.  
+	Ideally the approach requires roughly 100GBs of RAM to load 3D pose databases for the retrievel of K-NNs. However, in this release we have modified the code to fit in 32GBs of RAM. Therefore, the run-time will be different as compared to  the one reported in the paper.  
 
   7.1. Provided Data  
   To speed things up, we provide 2D Pose Estimation results	(ActivityAll_S11_C2.txt) and the K-NN for each body configuration (sepOrient.tar) which can be found in the Data folder.  
