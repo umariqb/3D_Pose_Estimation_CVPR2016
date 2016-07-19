@@ -46,11 +46,11 @@ The code is tested on Ubuntu 14.04 (64bit) with MATLAB (2016a).
     To compile and install the binaries, please run 'installBinaries.m'. This script automatically runs cmake to build the neccecasry C++ implementations. For some Matlab installations, this results in some undefined reference errors. In that case, please switch to '../MEX/src/build' and run the following commands manually from your terminal
 
       * $ cmake -G "Unix Makefiles"
-      * $ system('make');
+      * $ make;
       
 
-6. CONFIGURATION  
-6.1. Adjust Parameters
+5. CONFIGURATION  
+5.1. Adjust Parameters
 Open 'Initialize.m' located in the 'code' folder.
     Line 9:   
       If necessary, adjust the path for the Human36M code
@@ -85,16 +85,14 @@ Open 'Initialize.m' located in the 'code' folder.
   Line 85:  
        You can specify, how many iterations you want to perform.  
 
-7. RUNNING THE CODE  
+6. RUNNING THE CODE  
 
   You can either call 'RUN_Complete.m' to perform 3D Pose Estimation onthe whole dataset once or call 'RUN_Iterated.m' to performe 3D Pose Estimation	for each single image of the dataset.  
 
 	Ideally the approach requires roughly 100GBs of RAM to load 3D pose databases for the retrievel of K-NNs. However, in this release we have modified the code to fit in 32GBs of RAM. Therefore, the run-time will be different as compared to  the one reported in the paper.  
 
-  7.1. Provided Data  
-  To speed things up, we provide 2D Pose Estimation results	(ActivityAll_S11_C2.txt) and the K-NN for each body configuration (sepOrient.tar) which can be found in the Data folder.  
 
-8. FUTURE RELEASE  
+7. FUTURE RELEASE  
     In the future we will also add support for HumanEva dataset
 
 ## Citing
