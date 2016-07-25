@@ -105,3 +105,7 @@ Open 'Initialize.m' located in the 'code' folder.
 	url = {http://arxiv.org/abs/1509.06720}
 }
 ```
+
+# Acknowledgements  
+
+A big thanks to Andreas Doering for preparing the source code for public availability. 
