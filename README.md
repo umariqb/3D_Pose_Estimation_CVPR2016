@@ -47,8 +47,8 @@ The code is tested on Ubuntu 14.04 (64bit) with MATLAB (2016a).
 5. COMPILATION  
     To compile and install the binaries, please run 'installBinaries.m'. This script automatically runs cmake to build the neccecasry C++ implementations. For some Matlab installations, this results in some undefined reference errors. In that case, please switch to '../MEX/src/build' and run the following commands manually from your terminal
 
-      * $ cmake -G "Unix Makefiles"
-      * $ make;
+      * $ cmake -G "Unix Makefiles" ../
+      * $ make
       
 
 6. CONFIGURATION  
