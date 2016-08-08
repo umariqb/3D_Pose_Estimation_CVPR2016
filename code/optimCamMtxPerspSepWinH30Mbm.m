@@ -122,7 +122,7 @@ if((ndims(knn3d)==3) || (singleDim == 1))
         end
         %%
         count = count + 1;
-        act = opts.act(f);
+        %act = opts.act(f);
     end
     toc
 end
