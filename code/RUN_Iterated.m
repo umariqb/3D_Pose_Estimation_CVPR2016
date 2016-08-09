@@ -100,6 +100,11 @@ end
                 fullfile([opts.saveResPath opts.inputDB '_' opts.database svStr num2str(opts.round) '/']);
                 opts.saveResPath = fullfile([opts.saveResPath  '/sepOrient/']);
 
+               % retrieve joint configuration
+               opts.cJno = getShapeJointNum(opts.bodyType,opts.inputDB);
+               [opts.allJoints, opts.cJoints] = getJointsHE (opts.inputDB,opts.database,opts.cJno,opts.bodyType);
+               opts = getJointsIdx(opts);
+
                 cvpr(opts, db);
             end
            fprintf('\nDone retrieving KNN for all body types');
