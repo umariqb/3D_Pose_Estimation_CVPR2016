@@ -129,22 +129,34 @@ for r=1:opts.numRounds
     fprintf('Estimation error[mm]: %f\n', err.er3DPoseOpt.errFrAll);
 
     if(TDPose_VisualizeResults == 1)
-        close all
-        subplot(1,3,1)
-        imshow(img_path);
-        hold on
-        motPlot2D(motIn2DEstimation);
-        title('Estimated 2D Pose')
-        hold off
-        subplot(1,3,2)
-        imshow(img_path);
-        hold on
-        motPlot2D(motIn2DEstimation);
-        title('Refined 2D Pose')
-        hold off
-        subplot(1,3,3)
-        motPlot3D(opts.inputDB, motrecOpt);
-        title('Estimated 3D Pose')
+        fid=fopen(TDPose_ImgIndexPath,'r');
+        format = '%s%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%s%f';
+        data_line = textscan(fid, format);
+        fclose(fid);
+        
+        imagePaths = data_line{1};
+        
+        for i=1:size(imagePaths,1)
+            img_path = imagePaths{i};
+            close all
+            subplot(1,3,1)
+            imshow(img_path);
+            hold on
+            motPlot2D(motIn2DEstimation,i);
+            title('Estimated 2D Pose')
+            hold off
+            subplot(1,3,2)
+            imshow(img_path);
+            hold on
+            motPlot2D(motIn2DEstimation,i);
+            title('Refined 2D Pose')
+            hold off
+            subplot(1,3,3)
+            motPlot3D(opts.inputDB, motrecOpt);
+            title('Estimated 3D Pose')
+
+            pause(4);
+        end
     end
     if(TDPose_PauseAfterResult == 1)
       fprintf('Press Any Key to continue\n');
