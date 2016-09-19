@@ -6,4 +6,4 @@ rm Data.tar.gz
 
 # get regressors for 2D pose estimate
 wget http://pages.iai.uni-bonn.de/iqbal_umar/ds3dpose/data/regressors.tar.gz
-tar -zxvf regressors.tar.gz ./MEX/src
+tar -zxvf regressors.tar.gz & mv regressors ./MEX/src/ & rm regressors.tar.gz
