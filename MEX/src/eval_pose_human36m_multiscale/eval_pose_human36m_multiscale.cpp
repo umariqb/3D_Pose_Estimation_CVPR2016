@@ -152,6 +152,7 @@ int main(int argc, char** argv) {
 
     // load image
     Mat image = imread(annotations[i],1);
+    CHECK(image.data) << "Image not found: "<<annotations[i];
     vector<Mat> pyramid;
     initial_scale = vision::image_utils::build_image_pyramid(image,
     pyramid_param.scale_count,

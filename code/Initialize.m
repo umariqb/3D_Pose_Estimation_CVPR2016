@@ -14,8 +14,8 @@
 
 
     %% Add Library Paths
-    OPENCV_LIBRARY_PATH = '/home/doering/work/CVG/Libraries/opencv-2.4.11/lib:';
-    OPENCV_INCLUDE_PATH = '/home/doering/work/CVG/Libraries/opencv-2.4.11/include:';
+    OPENCV_LIBRARY_PATH = '/home/ibal_109/opencv-2.4.8/build/lib/:';
+    OPENCV_INCLUDE_PATH = '/home/ibal_109/opencv-2.4.8/build/include/:';
     currentDir = pwd;
     TDPoseDir = '../MEX/src/eval_pose_human36m_multiscale';
     PoseRefinementDir = '../MEX/src/eval_pose_human36m_bestscale_with_nn_and_assign_weights';
@@ -60,11 +60,11 @@
     % TDPose_DeleteFilesAfterEstimation: delete all estimation files          %
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-    TDPose_ConfigPath                       = '/home/doering/DataPartition/3D_Pose_Estimation/MEX/src/regressors';
+    TDPose_ConfigPath                       = '../MEX/src/regressors';
     TDPose_ExperimentName                   = 'regress_02';
-    TDPose_TestImageLocation                = '/media/data/doering/cluster_3DPose/3D_Pose_Estimation_Public_v1/S11_im';
+    TDPose_TestImageLocation                = '../S11_im';
     TDPose_NTrees                           = uint32(30);
-    TDPose_TrainFile                        = '/media/data/doering/Datasets/Human3.6/image_index_train_rescaled.txt';
+    TDPose_TrainFile                        = '../Data/image_index_train_rescaled.txt';
     TDPose_TmpFileSavePath                  = '/tmp/PE_Data2/';
     TDPose_TmpSaveResults                   = '/tmp/PE_SaveResults2/';
     TDPose_EstiamtedAnnotationName          = 'estimatedPose_human36m_multiscale_6s.txt';

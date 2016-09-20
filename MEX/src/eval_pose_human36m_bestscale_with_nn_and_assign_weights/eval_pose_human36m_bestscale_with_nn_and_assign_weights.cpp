@@ -149,7 +149,8 @@ int main(int argc, char** argv) {
 
     // load image
     Mat image_org = imread(annotations[i].url,1);
-    Mat image;
+    CHECK(image_org.data) << "Image not found "<<annotations[i].url;
+    Mat image;	
   
     std::vector<string> strs1;
     boost::split(strs1,annotations[i].url,boost::is_any_of("/"));
