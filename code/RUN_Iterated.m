@@ -40,6 +40,12 @@ end
            img_path = cell2mat(annotations{1}(i));
            fprintf(fid_nn, '%s', img_path);
 
+           % get specific frame number
+           [~,name,ext] = fileparts(img_path);
+           C = strsplit([name '.' ext], '_');
+           targetGTFrame = str2num(C{3});
+           %
+           
            for k = 2:size(annotations,2)
                 fprintf(fid_nn, ' %d', annotations{k}(i));
            end
@@ -152,7 +158,7 @@ end
             %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
             
             opts.dataFormat = 'new';
-            opts.extractFrameNum = i;                                       % Specifies, which GT frame should be 
+            opts.extractFrameNum = targetGTFrame;                           % Specifies, which GT frame should be 
                                                                             % extracted
             
             opts.loadIdxPath = fullfile(TDPose_TmpSaveResults);
