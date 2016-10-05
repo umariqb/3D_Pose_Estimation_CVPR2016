@@ -3,7 +3,7 @@
 %%%%   In this Demo, number of iterations for each image is set to 1 %%%%
 %%%%   Authors: Hashim Yasim, Umar Iqbal, Andreas Döring             %%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+warning('off', 'all');
 if((exist('isInitialized','var') == 0) ||  (isInitialized ~= 1))
    errStr=['Please run ''','Initialize''', ' first. Also make sure to compile the binaries first'];
    error(errStr);
@@ -238,5 +238,5 @@ end
                 rmdir(deleteStr, 's');
        end
                
-               
+   warning('on', 'all');            
                
