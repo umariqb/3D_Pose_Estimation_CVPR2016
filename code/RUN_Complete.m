@@ -3,6 +3,13 @@
 %%%%%%%%%%% Authors: Hashim Yasim, Umar Iqbal, Andreas Döring %%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%% Delete temporary files
+deleteStr = TDPose_TmpFileSavePath;
+rmdir(deleteStr, 's');
+deleteStr = TDPose_TmpSaveResults;
+rmdir(deleteStr, 's');
+%%
+
 if((exist('isInitialized','var') == 0) ||  (isInitialized ~= 1))
    errStr=['Please run ''','Initialize''', ' first. Also make sure to compile the binaries first'];
    error(errStr);

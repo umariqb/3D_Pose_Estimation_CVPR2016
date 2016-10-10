@@ -3,6 +3,14 @@
 %%%%   In this Demo, number of iterations for each image is set to 1 %%%%
 %%%%   Authors: Hashim Yasim, Umar Iqbal, Andreas Döring             %%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Delete temporary files
+deleteStr = TDPose_TmpFileSavePath;
+rmdir(deleteStr, 's');
+deleteStr = TDPose_TmpSaveResults;
+rmdir(deleteStr, 's');
+%%
+
 warning('off', 'all');
 if((exist('isInitialized','var') == 0) ||  (isInitialized ~= 1))
    errStr=['Please run ''','Initialize''', ' first. Also make sure to compile the binaries first'];
@@ -24,6 +32,7 @@ end
 %   seperately.                               %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         for i=1:numImages
+            tic
             if ~exist(opts.saveResPath,'dir')
                 mkdir(opts.saveResPath);
             end
@@ -229,7 +238,9 @@ end
                %pause;
                
 %%%%%%%%%%%%%%%%%% END OF MAIN LOOP  %%%%%%%%%%%%%%%%%%
-
+        time = toc;
+        fprintf('Processing image %i took %i sconds', i, time);
+        
         end
       if(TDPose_DeleteFilesAfterEstimation == 1)
                 deleteStr = TDPose_TmpFileSavePath;
